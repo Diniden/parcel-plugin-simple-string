@@ -1,0 +1,23 @@
+{
+  "name": "parcel-plugin-simple-string",
+  "version": "0.0.1",
+  "description": "Raw text parcel plugin with package configuration",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diniden/parcel-plugin-simple-string.git"
+  },
+  "author": "Diniden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Diniden/parcel-plugin-simple-string/issues"
+  },
+  "homepage": "https://github.com/Diniden/parcel-plugin-simple-string#readme",
+  "dependencies": {
+    "app-root-path": "^2.2.1"
+  },
+  "string": [
+    "fs", "vs"
+  ]
+}
