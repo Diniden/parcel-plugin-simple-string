@@ -7,9 +7,6 @@ class SimpleStringAsset extends Asset {
   }
 
   async parse(fileString) {
-    console.log('FILE STRING', fileString);
-    const pkg = await this.resolver.findPackage(process.cwd());
-    console.log(pkg);
     this.code = fileString;
   }
 
