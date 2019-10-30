@@ -7,6 +7,7 @@ const { resolve, dirname } = require('path');
 let base64Asset = '';
 
 module.exports = async function (bundler) {
+  console.log(require('app-root-path').resolve('.'));
   if (Array.isArray(package.string)) {
     package.string.forEach(fileType => {
       if (Array.isArray(fileType)) {
