@@ -4,7 +4,6 @@ const fs = require('fs');
 class Base64Asset extends Asset {
   constructor(name, options, ...args) {
     super(name, options);
-    console.log('Base64:', name);
     this.type = 'js';
     this.fileToConvert = name;
   }
