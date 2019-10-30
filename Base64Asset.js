@@ -9,13 +9,9 @@ class Base64Asset extends Asset {
     this.fileToConvert = name;
   }
 
-  async parse(fileString) {
-    console.log('PARSE');
-  }
-
   generate() {
-    console.log('Encrypting', config);
-    const [ext, encoding, header, footer] = config;
+    const [ext, encoding, header, footer, verbose] = config;
+    if (verbose) console.log('Base64:', this.fileToConvert, "From Config:", config);
     const buffer = fs.readFileSync(this.fileToConvert, { encoding: 'base64' });
     return { 'js': `module.exports = "${header}${buffer}${footer}"` };
   }
