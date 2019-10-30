@@ -7,7 +7,6 @@ const { resolve, dirname } = require('path');
 let base64Asset = '';
 
 module.exports = async function (bundler) {
-  console.log(require('app-root-path').resolve('.'));
   if (Array.isArray(package.string)) {
     package.string.forEach(fileType => {
       if (Array.isArray(fileType)) {
@@ -25,7 +24,6 @@ module.exports = async function (bundler) {
             let assetId = ext;
             let assetName = `Base64Asset_${assetId}.js`;
 
-            console.log(ext, 'is now handled by', assetName);
             fs.writeFileSync(
               resolve(dirname(require.resolve('./Base64Asset.js')), assetName),
               newAsset,
