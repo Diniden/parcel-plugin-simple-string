@@ -15,9 +15,12 @@
   },
   "homepage": "https://github.com/Diniden/parcel-plugin-simple-string#readme",
   "dependencies": {
-    "app-root-path": "^2.2.1"
+    "app-root-path": "^2.2.1",
+    "js-base64": "2.5.1"
   },
   "string": [
-    "fs", "vs"
-  ]
+    "fs",
+    "vs"
+  ],
+  "devDependencies": {}
 }
